@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aging report — 2026-10-18</title>
+<style>
+  :root { --ink:#1c2430; --muted:#66707d; --line:#e4e8ee; --bg:#f6f8fb; --warn:#b4472e; }
+  body { font:15px/1.5 system-ui, sans-serif; color:var(--ink); background:var(--bg); margin:0; }
+  main { max-width:980px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .meta { color:var(--muted); margin-bottom:24px; }
+  .cards { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:28px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 18px; min-width:180px; }
+  .card b { display:block; font-size:20px; }
+  .card span { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  section { background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin-bottom:20px; }
+  .bar-row { display:grid; grid-template-columns:70px 1fr 130px 70px; gap:10px; align-items:center; margin:6px 0; }
+  .bar { background:#eef1f5; border-radius:6px; height:16px; overflow:hidden; }
+  .fill { display:block; height:100%; background:linear-gradient(90deg,#e0a15c,#b4472e); }
+  .bval { text-align:right; font-variant-numeric:tabular-nums; }
+  .bcount { color:var(--muted); font-size:12px; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); }
+  th { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .pill { padding:2px 8px; border-radius:999px; font-size:12px; background:#eef1f5; }
+  .b90p, .b6190 { background:#f7dcd4; color:var(--warn); }
+  .late { color:var(--warn); font-weight:600; }
+  footer { color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Aging report — 2026-10-18</h1>
+  <div class="meta">12 open invoices · source: F:/prjs/githubProjects/projects/2026-10-18/agingradar/examples/invoices-sample.csv</div>
+  <div class="cards">
+    <div class="card"><span>Outstanding</span><b>$7,631.75</b></div>
+    <div class="card"><span>Overdue</span><b>$7,291.75</b> 96% of outstanding</div>
+    <div class="card"><span>Late payers (history)</span><b>2</b></div>
+  </div>
+  <section><h2>Aging buckets</h2><div class="bar-row"><span class="bname">current</span><span class="bar"><span class="fill" style="width:6.6%"></span></span><span class="bval">$340.00</span><span class="bcount">1 inv.</span></div><div class="bar-row"><span class="bname">1-30</span><span class="bar"><span class="fill" style="width:3.9%"></span></span><span class="bval">$199.00</span><span class="bcount">1 inv.</span></div><div class="bar-row"><span class="bname">31-60</span><span class="bar"><span class="fill" style="width:11.8%"></span></span><span class="bval">$607.50</span><span class="bcount">3 inv.</span></div><div class="bar-row"><span class="bname">61-90</span><span class="bar"><span class="fill" style="width:25.7%"></span></span><span class="bval">$1,325.25</span><span class="bcount">2 inv.</span></div><div class="bar-row"><span class="bname">90+</span><span class="bar"><span class="fill" style="width:100.0%"></span></span><span class="bval">$5,160.00</span><span class="bcount">5 inv.</span></div></section>
+  <section><h2>Chase list — top 10</h2>
+    <table>
+      <tr><th>#</th><th>Invoice</th><th>Customer</th><th>Due</th><th>Days</th><th>Bucket</th><th>Balance</th><th>Score</th><th>History</th></tr>
+      <tr><td>1</td><td>INV-1005</td><td>Cedar Design Studio</td><td>2026-03-31</td><td>+201</td><td><span class='pill b90p'>90+</span></td><td class='num'>$2,400.00</td><td class='num'>100</td><td></td></tr><tr><td>2</td><td>INV-1001</td><td>Acme Bakery</td><td>2026-07-31</td><td>+79</td><td><span class='pill b6190'>61-90</span></td><td class='num'>$1,250.00</td><td class='num'>69</td><td>late</td></tr><tr><td>3</td><td>INV-1014</td><td>Cedar Design Studio</td><td>2026-06-14</td><td>+126</td><td><span class='pill b90p'>90+</span></td><td class='num'>$1,050.00</td><td class='num'>66</td><td></td></tr><tr><td>4</td><td>INV-1008</td><td>Delta Freight</td><td>2026-03-12</td><td>+220</td><td><span class='pill b90p'>90+</span></td><td class='num'>$640.00</td><td class='num'>52</td><td></td></tr><tr><td>5</td><td>INV-1002</td><td>Acme Bakery</td><td>2026-05-31</td><td>+140</td><td><span class='pill b90p'>90+</span></td><td class='num'>$480.00</td><td class='num'>51</td><td>late</td></tr><tr><td>6</td><td>INV-1004</td><td>Blue Harbor Cafe</td><td>2026-05-15</td><td>+156</td><td><span class='pill b90p'>90+</span></td><td class='num'>$590.00</td><td class='num'>50</td><td></td></tr><tr><td>7</td><td>INV-1003</td><td>Blue Harbor Cafe</td><td>2026-09-09</td><td>+39</td><td><span class='pill b3160'>31-60</span></td><td class='num'>$312.50</td><td class='num'>24</td><td></td></tr><tr><td>8</td><td>INV-1011</td><td>Acme Bakery</td><td>2026-09-04</td><td>+44</td><td><span class='pill b3160'>31-60</span></td><td class='num'>$220.00</td><td class='num'>23</td><td>late</td></tr><tr><td>9</td><td>INV-1009</td><td>Elm Veterinary</td><td>2026-10-12</td><td>+6</td><td><span class='pill b130'>1-30</span></td><td class='num'>$199.00</td><td class='num'>17</td><td>late</td></tr><tr><td>10</td><td>INV-1007</td><td>Delta Freight</td><td>2026-07-20</td><td>+90</td><td><span class='pill b6190'>61-90</span></td><td class='num'>$75.25</td><td class='num'>15</td><td></td></tr>
+    </table>
+  </section>
+  <footer>Late-payment history: Acme Bakery (1), Elm Veterinary (1). Scores combine amount, aging bucket and
+  late-payment history; this page is generated software output, not financial advice.</footer>
+</main>
+</body>
+</html>

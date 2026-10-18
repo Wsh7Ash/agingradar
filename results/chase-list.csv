@@ -1,0 +1,13 @@
+rank,invoice,customer,due_date,days_overdue,bucket,balance,currency,score_pct,late_history
+1,INV-1005,Cedar Design Studio,2026-03-31,201,90+,2400.00,USD,100,no
+2,INV-1001,Acme Bakery,2026-07-31,79,61-90,1250.00,USD,69,yes
+3,INV-1014,Cedar Design Studio,2026-06-14,126,90+,1050.00,USD,66,no
+4,INV-1008,Delta Freight,2026-03-12,220,90+,640.00,USD,52,no
+5,INV-1002,Acme Bakery,2026-05-31,140,90+,480.00,USD,51,yes
+6,INV-1004,Blue Harbor Cafe,2026-05-15,156,90+,590.00,USD,50,no
+7,INV-1003,Blue Harbor Cafe,2026-09-09,39,31-60,312.50,USD,24,no
+8,INV-1011,Acme Bakery,2026-09-04,44,31-60,220.00,USD,23,yes
+9,INV-1009,Elm Veterinary,2026-10-12,6,1-30,199.00,USD,17,yes
+10,INV-1007,Delta Freight,2026-07-20,90,61-90,75.25,USD,15,no
+11,INV-1016,Acme Bakery,2026-11-04,-17,current,340.00,USD,14,yes
+12,INV-1015,Elm Veterinary,2026-08-19,60,31-60,75.00,USD,14,yes

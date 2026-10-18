@@ -1,0 +1,17 @@
+number,customer,issue_date,due_date,amount,paid_amount,paid_date,status,currency
+INV-1001,Acme Bakery,2026-07-01,2026-07-31,1250.00,,,open,USD
+INV-1002,Acme Bakery,2026-05-01,2026-05-31,480.00,,2026-06-20,,USD
+INV-1003,Blue Harbor Cafe,2026-08-10,2026-09-09,312.50,,,open,USD
+INV-1004,Blue Harbor Cafe,2026-04-15,2026-05-15,890.00,300.00,,open,USD
+INV-1005,Cedar Design Studio,2026-03-01,2026-03-31,2400.00,,,open,USD
+INV-1006,Cedar Design Studio,2026-09-01,2026-10-01,1500.00,1500.00,2026-09-28,,USD
+INV-1007,Delta Freight,2026-06-20,2026-07-20,75.25,,,open,USD
+INV-1008,Delta Freight,2026-02-10,2026-03-12,640.00,,,open,USD
+INV-1009,Elm Veterinary,2026-09-12,2026-10-12,199.00,,,open,USD
+INV-1010,Elm Veterinary,2026-01-05,2026-02-04,310.00,310.00,2026-04-02,,USD
+INV-1011,Acme Bakery,2026-08-05,2026-09-04,220.00,,,open,USD
+INV-1012,Delta Freight,2026-10-01,2026-10-31,980.00,,,draft,USD
+INV-1013,Blue Harbor Cafe,2026-06-01,2026-06-30,140.00,,,void,USD
+INV-1014,Cedar Design Studio,2026-05-15,2026-06-14,1050.00,,,open,USD
+INV-1015,Elm Veterinary,2026-07-20,2026-08-19,75.00,,,open,USD
+INV-1016,Acme Bakery,2026-10-05,2026-11-04,340.00,,,open,USD

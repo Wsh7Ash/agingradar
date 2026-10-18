@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-10-18",
+  "average_days_to_payment": 27.0,
+  "bucket_counts": {
+    "1-30": 1,
+    "31-60": 3,
+    "61-90": 2,
+    "90+": 5,
+    "current": 1
+  },
+  "bucket_totals_cents": {
+    "1-30": 19900,
+    "31-60": 60750,
+    "61-90": 132525,
+    "90+": 516000,
+    "current": 34000
+  },
+  "customers": 5,
+  "ignored": 2,
+  "invoices": 16,
+  "late_payers": {
+    "Acme Bakery": 1,
+    "Elm Veterinary": 1
+  },
+  "open": 12,
+  "outstanding_cents": 763175,
+  "overdue_cents": 729175,
+  "overdue_ratio": 0.9554,
+  "paid": 2,
+  "source": "F:/prjs/githubProjects/projects/2026-10-18/agingradar/examples/invoices-sample.csv",
+  "top_chase": [
+    {
+      "balance": "$2,400.00",
+      "bucket": "90+",
+      "customer": "Cedar Design Studio",
+      "days_overdue": 201,
+      "invoice": "INV-1005",
+      "rank": 1,
+      "score": 100
+    },
+    {
+      "balance": "$1,250.00",
+      "bucket": "61-90",
+      "customer": "Acme Bakery",
+      "days_overdue": 79,
+      "invoice": "INV-1001",
+      "rank": 2,
+      "score": 69
+    },
+    {
+      "balance": "$1,050.00",
+      "bucket": "90+",
+      "customer": "Cedar Design Studio",
+      "days_overdue": 126,
+      "invoice": "INV-1014",
+      "rank": 3,
+      "score": 66
+    },
+    {
+      "balance": "$640.00",
+      "bucket": "90+",
+      "customer": "Delta Freight",
+      "days_overdue": 220,
+      "invoice": "INV-1008",
+      "rank": 4,
+      "score": 52
+    },
+    {
+      "balance": "$480.00",
+      "bucket": "90+",
+      "customer": "Acme Bakery",
+      "days_overdue": 140,
+      "invoice": "INV-1002",
+      "rank": 5,
+      "score": 51
+    }
+  ]
+}
